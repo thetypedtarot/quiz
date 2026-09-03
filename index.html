@@ -906,15 +906,43 @@
     }
     .email-invite > p { margin: 0 auto 22px; }
     .email-invite .ml-embedded { margin: 0 auto; }
-    .email-invite .ml-embedded input[type="email"] { font-family: var(--body); }
-    .email-invite .ml-embedded button,
+    /* Theme the MailerLite-rendered form to match the brand */
+    .email-invite .ml-embedded,
+    .email-invite .ml-form-embedContainer,
+    .email-invite .ml-form-embedWrapper,
+    .email-invite .ml-form-embedBody,
+    .email-invite .ml-form-embedContent {
+      background: transparent !important;
+      border: 0 !important;
+      box-shadow: none !important;
+      font-family: var(--body) !important;
+    }
+    .email-invite .ml-form-embedBody { padding: 0 !important; }
+    .email-invite .ml-embedded input[type="email"],
+    .email-invite .ml-form-embedContainer input.form-control {
+      font-family: var(--body) !important;
+      color: var(--tx-strong) !important;
+      background: var(--bg) !important;
+      border: 1px solid var(--line-strong) !important;
+      border-radius: 2px !important;
+    }
+    .email-invite .ml-embedded button[type="submit"],
+    .email-invite .ml-form-embedSubmit button,
+    .email-invite .ml-form-embedSubmit button.primary,
     .email-invite .ml-embedded .primary {
       background: var(--acc) !important;
       color: var(--btn-tx) !important;
       font-family: var(--typed) !important;
+      font-size: .82rem !important;
       letter-spacing: .14em !important;
       text-transform: uppercase !important;
+      border: 0 !important;
       border-radius: 2px !important;
+      box-shadow: 3px 3px 0 var(--shadow) !important;
+    }
+    .email-invite .ml-form-embedSubmit button:hover,
+    .email-invite .ml-embedded button[type="submit"]:hover {
+      transform: translate(-1px, -1px);
     }
   </style>
 
