@@ -1392,6 +1392,28 @@
       return icons[icon] || icons.northstar;
     }
 
+    /* Records which result a visitor got by filling a hidden MailerLite
+       custom field. Activates once a text field is added to the form in
+       MailerLite; harmless until then. */
+    let quizResultName = null;
+    function fillMailerLiteResult() {
+      const scope = document.querySelector(".email-invite .ml-embedded");
+      if (!scope || !quizResultName) return false;
+      const inputs = scope.querySelectorAll('input[name^="fields["]');
+      let filled = false;
+      inputs.forEach(input => {
+        const n = input.getAttribute("name");
+        if (n === "fields[email]" || n === "fields[name]") return;
+        input.value = quizResultName;
+        input.dispatchEvent(new Event("input", { bubbles: true }));
+        input.dispatchEvent(new Event("change", { bubbles: true }));
+        const row = input.closest(".ml-form-fieldRow") || input.closest(".ml-field-group") || input.parentElement;
+        if (row) row.style.display = "none";
+        filled = true;
+      });
+      return filled;
+    }
+
     function renderResult(primaryKey, supportingKey) {
       const primary = TYPES[primaryKey];
       const supporting = TYPES[supportingKey];
@@ -1473,6 +1495,13 @@
           showToast("Add Lisa’s live session link in SITE_CONFIG before publishing.");
         }
       });
+
+      // Pass the visitor's result into the MailerLite signup as a hidden field.
+      quizResultName = primary.name;
+      let mlTries = 0;
+      const mlTimer = setInterval(() => {
+        if (fillMailerLiteResult() || mlTries++ > 40) clearInterval(mlTimer);
+      }, 250);
     }
 
     async function copyResult(primary, supporting) {
