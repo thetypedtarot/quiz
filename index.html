@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover Your Self-Trust Language — a six-question assessment from TheTypedTarot." />
+  <meta name="theme-color" content="#F5F0EB" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Discover Your Self-Trust Language | TheTypedTarot" />
+  <meta property="og:description" content="Find the doorway that helps you hear your inner knowing and move forward with greater confidence." />
+  <title>Discover Your Self-Trust Language | TheTypedTarot</title>
+
+  <!-- Exact brand fonts load from Google Fonts; serif fallbacks keep the page readable offline. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Lora:ital,wght@0,400;0,600;1,400&family=Special+Elite&display=swap" rel="stylesheet">
+
+  <style>
+    :root,
+    [data-theme="light"],
+    [data-theme="dark"] {
+      color-scheme: light;
+      --bg: #F5F0EB;
+      --panel: #EDE7D9;
+      --panel-2: #E3DFD0;
+      --tx: #463C32;
+      --tx-strong: #2C2621;
+      --tx-soft: #7C7060;
+      --acc: #C28A46;
+      --acc-tx: #96682B;
+      --grn: #5B6655;
+      --sage: #8C9A83;
+      --gold: #B59A68;
+      --cedar: #6A5848;
+      --line: rgba(106, 88, 72, .28);
+      --line-strong: rgba(106, 88, 72, .55);
+      --shadow: rgba(44, 38, 33, .14);
+      --tape: rgba(181, 154, 104, .38);
+      --stain: rgba(106, 88, 72, .07);
+      --btn-tx: #26201A;
+      --serif: "Cormorant Garamond", "Palatino Linotype", Georgia, serif;
+      --typed: "Special Elite", "Courier New", monospace;
+      --body: "Lora", "Palatino Linotype", Palatino, Georgia, serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        color-scheme: light;
+        --bg: #F5F0EB;
+        --panel: #EDE7D9;
+        --panel-2: #E3DFD0;
+        --tx: #463C32;
+        --tx-strong: #2C2621;
+        --tx-soft: #7C7060;
+        --acc: #C28A46;
+        --acc-tx: #96682B;
+        --grn: #5B6655;
+        --sage: #8C9A83;
+        --gold: #B59A68;
+        --cedar: #6A5848;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--bg);
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--tx);
+      background-color: var(--bg);
+      background-image:
+        radial-gradient(ellipse 60% 40% at 0% 0%, var(--stain), transparent 70%),
+        radial-gradient(ellipse 50% 35% at 100% 100%, var(--stain), transparent 70%);
+      font-family: var(--body);
+      font-size: 17px;
+      line-height: 1.75;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      opacity: .5;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='linear' slope='0.08'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+
+    ::selection {
+      background: var(--acc);
+      color: var(--btn-tx);
+    }
+
+    :focus-visible {
+      outline: 2px dashed var(--acc-tx);
+      outline-offset: 3px;
+    }
+
+    button, a { font: inherit; }
+
+    button { color: inherit; }
+
+    h1, h2, h3, h4 {
+      margin-top: 0;
+      color: var(--tx-strong);
+      font-family: var(--serif);
+      font-weight: 600;
+      line-height: 1.12;
+      text-wrap: balance;
+    }
+
+    p { max-width: 64ch; }
+
+    .site-head,
+    main,
+    footer,
+    .toast {
+      position: relative;
+      z-index: 1;
+    }
+
+    .site-head {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid var(--line);
+      background: rgba(245, 240, 235, .94);
+    }
+
+    .wrap {
+      width: 100%;
+      max-width: 1040px;
+      margin: 0 auto;
+      padding-inline: 26px;
+    }
+
+    .head-inner {
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      color: var(--tx-strong);
+      font-family: var(--serif);
+      font-size: 1.25rem;
+      font-weight: 600;
+      letter-spacing: .14em;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .head-note {
+      color: var(--tx-soft);
+      font-family: var(--typed);
+      font-size: .72rem;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      text-align: right;
+    }
+
+    .screen { display: none; }
+
+    .screen.active { display: block; }
+
+    .section {
+      min-height: calc(100vh - 69px);
+      padding: 78px 0;
+      overflow: hidden;
+    }
+
+    .hero {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 1.12fr) minmax(280px, .88fr);
+      gap: clamp(34px, 6vw, 76px);
+      align-items: center;
+    }
+
+    .hero-copy { position: relative; z-index: 2; }
+
+    .eyebrow-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+
+    .eyebrow-row::after {
+      content: "";
+      width: 64px;
+      height: 1px;
+      background: var(--line-strong);
+    }
+
+    .type-label {
+      color: var(--acc-tx);
+      font-family: var(--typed);
+      font-size: .78rem;
+      letter-spacing: .28em;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      margin-bottom: 22px;
+      font-size: clamp(3.2rem, 8vw, 5.3rem);
+      font-weight: 500;
+      letter-spacing: .035em;
+    }
+
+    .hero-sub {
+      margin: 0 0 22px;
+      color: var(--grn);
+      font-family: var(--serif);
+      font-size: clamp(1.35rem, 3vw, 1.75rem);
+      font-style: italic;
+      font-weight: 500;
+      letter-spacing: .025em;
+      line-height: 1.35;
+    }
+
+    .hero-body {
+      margin: 0 0 28px;
+      color: var(--tx);
+    }
+
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+
+    .chip {
+      padding: 8px 14px 6px;
+      border: 1px solid var(--line-strong);
+      border-radius: 2px;
+      background: var(--panel);
+      color: var(--tx-strong);
+      font-family: var(--typed);
+      font-size: .72rem;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 26px 13px;
+      border: 1px solid transparent;
+      border-radius: 2px;
+      cursor: pointer;
+      font-family: var(--typed);
+      font-size: .82rem;
+      letter-spacing: .14em;
+      line-height: 1.3;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: transform .12s ease, box-shadow .12s ease;
+    }
+
+    .btn-amber {
+      background: var(--acc);
+      color: var(--btn-tx);
+      box-shadow: 3px 3px 0 var(--shadow);
+    }
+
+    .btn-amber:hover {
+      transform: translate(-1px, -1px);
+      box-shadow: 4px 4px 0 var(--shadow);
+    }
+
+    .btn-ghost {
+      border-color: var(--line-strong);
+      background: transparent;
+      color: var(--tx-strong);
+    }
+
+    .btn-ghost:hover {
+      border-color: var(--acc);
+      color: var(--acc-tx);
+      transform: translate(-1px, -1px);
+    }
+
+    .hero-table {
+      position: relative;
+      min-height: 485px;
+      display: grid;
+      place-items: center;
+    }
+
+    .scrap {
+      position: relative;
+      z-index: 3;
+      width: min(355px, 94%);
+      padding: 38px 30px 32px;
+      border: 1px solid var(--line);
+      border-radius: 2px;
+      background: var(--panel);
+      box-shadow: 3px 5px 14px var(--shadow);
+      transform: rotate(-1.4deg);
+    }
+
+    .scrap::before {
+      content: "";
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      width: 96px;
+      height: 24px;
+      background: var(--tape);
+      transform: translateX(-50%) rotate(-2deg);
+    }
+
+    .scrap-label {
+      margin: 0 0 18px;
+      color: var(--acc-tx);
+      font-family: var(--typed);
+      font-size: .72rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    .typed-note {
+      min-height: 190px;
+      margin: 0;
+      color: var(--tx-strong);
+      font-family: var(--typed);
+      font-size: 1rem;
+      letter-spacing: .04em;
+      line-height: 1.9;
+    }
+
+    .caret {
+      display: inline-block;
+      width: .55em;
+      height: 1.05em;
+      margin-left: 2px;
+      background: var(--acc);
+      vertical-align: text-bottom;
+      animation: blink 1s steps(1) infinite;
+    }
+
+    @keyframes blink { 50% { opacity: 0; } }
+
+    .key-drawing {
+      display: block;
+      width: 128px;
+      margin: 25px auto 0;
+      color: var(--grn);
+    }
+
+    .watermark {
+      position: absolute;
+      color: var(--line-strong);
+      pointer-events: none;
+      opacity: .43;
+    }
+
+    .watermark.enneagram {
+      width: 330px;
+      right: -130px;
+      top: 20px;
+    }
+
+    .watermark.moon {
+      width: 170px;
+      left: -65px;
+      bottom: 12px;
+      opacity: .34;
+    }
+
+    .rule {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      max-width: 340px;
+      margin: 46px auto 0;
+      color: var(--acc-tx);
+      font-size: .85rem;
+    }
+
+    .rule::before,
+    .rule::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: var(--line-strong);
+    }
+
+    /* Quiz */
+    .quiz-section {
+      padding-top: 52px;
+    }
+
+    .quiz-shell {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    .progress-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 12px;
+      color: var(--tx-soft);
+      font-family: var(--typed);
+      font-size: .72rem;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    .progress-track {
+      height: 4px;
+      margin-bottom: 42px;
+      background: var(--panel-2);
+      border: 1px solid var(--line);
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0;
+      background: var(--acc);
+      transition: width .2s ease;
+    }
+
+    .question-frame {
+      position: relative;
+      padding: 52px clamp(24px, 5vw, 58px);
+      border: 1px solid var(--line-strong);
+      border-radius: 2px;
+      background: var(--panel);
+      box-shadow:
+        inset 0 0 0 5px var(--panel),
+        inset 0 0 0 6px var(--line),
+        4px 6px 18px var(--shadow);
+    }
+
+    .question-frame::before {
+      content: "FIELD NOTE";
+      position: absolute;
+      top: -13px;
+      left: 28px;
+      padding: 2px 10px;
+      background: var(--bg);
+      color: var(--acc-tx);
+      font-family: var(--typed);
+      font-size: .68rem;
+      letter-spacing: .18em;
+    }
+
+    .question-title {
+      max-width: 690px;
+      margin: 0 0 34px;
+      font-size: clamp(2.05rem, 5vw, 3.05rem);
+      letter-spacing: .02em;
+    }
+
+    .options {
+      display: grid;
+      gap: 13px;
+    }
+
+    .option {
+      position: relative;
+      display: grid;
+      grid-template-columns: 33px 1fr;
+      gap: 12px;
+      align-items: start;
+      width: 100%;
+      padding: 18px 19px 17px;
+      border: 1px solid var(--line);
+      border-top: 3px solid var(--acc);
+      border-radius: 2px;
+      background: var(--bg);
+      box-shadow: 2px 4px 10px rgba(44, 38, 33, .08);
+      color: var(--tx);
+      cursor: pointer;
+      text-align: left;
+      transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+    }
+
+    .option:nth-child(odd) { transform: rotate(-.18deg); }
+    .option:nth-child(even) { transform: rotate(.16deg); }
+
+    .option:hover,
+    .option.selected {
+      border-color: var(--gold);
+      border-top-color: var(--gold);
+      box-shadow: 3px 5px 12px var(--shadow);
+      transform: translate(-1px, -1px);
+    }
+
+    .option-key {
+      color: var(--acc-tx);
+      font-family: var(--typed);
+      font-size: .78rem;
+      letter-spacing: .08em;
+    }
+
+    .option-text {
+      font-family: var(--body);
+      font-size: .98rem;
+      line-height: 1.6;
+    }
+
+    .quiz-nav {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .link-btn {
+      padding: 7px 0;
+      border: 0;
+      border-bottom: 1px solid transparent;
+      background: transparent;
+      color: var(--tx-soft);
+      cursor: pointer;
+      font-family: var(--typed);
+      font-size: .72rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .link-btn:hover {
+      border-bottom-color: var(--acc);
+      color: var(--acc-tx);
+    }
+
+    .link-btn:disabled {
+      cursor: default;
+      opacity: .35;
+    }
+
+    /* Results */
+    .result-section {
+      padding-top: 54px;
+    }
+
+    .result-shell {
+      max-width: 920px;
+      margin: 0 auto;
+    }
+
+    .result-hero {
+      position: relative;
+      padding: 58px clamp(26px, 6vw, 70px);
+      border: 1px solid var(--line-strong);
+      background: var(--panel);
+      box-shadow:
+        inset 0 0 0 5px var(--panel),
+        inset 0 0 0 6px var(--line),
+        4px 6px 18px var(--shadow);
+      text-align: center;
+    }
+
+    .result-hero::before {
+      content: "";
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      width: 112px;
+      height: 25px;
+      background: var(--tape);
+      transform: translateX(-50%) rotate(-1.5deg);
+    }
+
+    .result-icon {
+      width: 104px;
+      height: 104px;
+      margin: 0 auto 18px;
+      color: var(--grn);
+    }
+
+    .result-eyebrow {
+      margin-bottom: 12px;
+      color: var(--acc-tx);
+      font-family: var(--typed);
+      font-size: .75rem;
+      letter-spacing: .24em;
+      text-transform: uppercase;
+    }
+
+    .result-title {
+      margin: 0;
+      font-size: clamp(3.1rem, 8vw, 5.1rem);
+      font-weight: 500;
+      letter-spacing: .03em;
+    }
+
+    .result-language {
+      margin: 10px auto 0;
+      color: var(--grn);
+      font-family: var(--body);
+      font-size: 1.02rem;
+      font-style: normal;
+      font-weight: 600;
+      letter-spacing: .015em;
+    }
+
+    .result-intro {
+      margin: 24px auto 0;
+    }
+
+    .support-line {
+      display: grid;
+      gap: 3px;
+      width: min(100%, 470px);
+      margin: 24px auto 0;
+      padding: 12px 15px 11px;
+      border: 1px solid var(--line-strong);
+      background: var(--bg);
+      text-align: center;
+      justify-items: center;
+    }
+
+    .support-label {
+      color: var(--acc-tx);
+      font-family: var(--typed);
+      font-size: .67rem;
+      letter-spacing: .14em;
+      line-height: 1.4;
+      text-transform: uppercase;
+    }
+
+    .support-value {
+      color: var(--tx-strong);
+      font-family: var(--body);
+      font-size: .96rem;
+      font-weight: 600;
+      letter-spacing: 0;
+      line-height: 1.5;
+      text-transform: none;
+    }
+
+    .support-divider {
+      color: var(--gold);
+      padding-inline: .2em;
+    }
+
+    .result-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+      margin-top: 34px;
+    }
+
+    .tcard {
+      padding: 30px 26px;
+      border: 1px solid var(--line);
+      border-top: 3px solid var(--acc);
+      border-radius: 2px;
+      background: var(--panel);
+      box-shadow: 2px 4px 12px var(--shadow);
+    }
+
+    .tcard:nth-child(odd) { transform: rotate(-.5deg); }
+    .tcard:nth-child(even) { transform: rotate(.45deg); }
+    .tcard.lit { border-top-color: var(--gold); }
+    .tcard.support { border-top-color: var(--sage); }
+    .tcard.full { grid-column: 1 / -1; }
+
+    .card-label {
+      margin: 0 0 12px;
+      color: var(--acc-tx);
+      font-family: var(--typed);
+      font-size: .72rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    .tcard h3 {
+      margin-bottom: 12px;
+      font-size: 1.72rem;
+    }
+
+    .tcard p,
+    .tcard li {
+      font-size: .96rem;
+      line-height: 1.75;
+    }
+
+    .checks {
+      display: grid;
+      gap: 11px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .checks li {
+      display: flex;
+      gap: 12px;
+      align-items: baseline;
+      color: var(--tx);
+      font-family: var(--body);
+      font-size: .94rem;
+      line-height: 1.7;
+    }
+
+    .checks li::before {
+      content: "✓";
+      flex: 0 0 auto;
+      color: var(--acc-tx);
+    }
+
+    .advice-heading {
+      max-width: 34ch;
+      margin: 18px auto 0 !important;
+      text-align: center;
+    }
+
+    .cta-frame {
+      margin-top: 42px;
+      padding: 52px clamp(26px, 5vw, 60px);
+      border: 1px solid var(--line-strong);
+      background: var(--panel-2);
+      box-shadow:
+        inset 0 0 0 5px var(--panel-2),
+        inset 0 0 0 6px var(--line),
+        4px 6px 18px var(--shadow);
+      text-align: center;
+    }
+
+    .cta-frame h2 {
+      max-width: 760px;
+      margin: 0 auto 16px;
+      font-size: clamp(2.15rem, 5vw, 3.25rem);
+    }
+
+    .cta-frame p {
+      margin: 0 auto 24px;
+    }
+
+    .cta-price {
+      margin-bottom: 12px;
+      color: var(--grn);
+      font-family: var(--typed);
+      font-size: .75rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    .result-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 26px;
+    }
+
+    .fine-print {
+      margin: 18px auto 0;
+      color: var(--tx-soft);
+      font-size: .78rem;
+      text-align: center;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 24px 0;
+      color: var(--tx-soft);
+      font-family: var(--typed);
+      font-size: .68rem;
+      letter-spacing: .18em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: 24px;
+      z-index: 30;
+      max-width: calc(100% - 32px);
+      padding: 11px 16px 9px;
+      border: 1px solid var(--line-strong);
+      border-radius: 2px;
+      background: var(--tx-strong);
+      color: var(--bg);
+      font-family: var(--typed);
+      font-size: .75rem;
+      letter-spacing: .08em;
+      opacity: 0;
+      pointer-events: none;
+      transform: translate(-50%, 12px);
+      transition: opacity .18s ease, transform .18s ease;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+
+    @media (max-width: 820px) {
+      .section { padding: 58px 0; }
+      .hero { grid-template-columns: 1fr; }
+      .hero-table { min-height: 390px; order: -1; }
+      .watermark.enneagram { width: 260px; right: -110px; }
+      .watermark.moon { display: none; }
+      .result-grid { grid-template-columns: 1fr; }
+      .tcard.full { grid-column: auto; }
+      .tcard,
+      .tcard:nth-child(odd),
+      .tcard:nth-child(even),
+      .option,
+      .option:nth-child(odd),
+      .option:nth-child(even),
+      .scrap {
+        transform: none;
+      }
+    }
+
+    @media (max-width: 560px) {
+      body { font-size: 16px; }
+      .wrap { padding-inline: 18px; }
+      .head-inner { min-height: 60px; }
+      .brand { font-size: 1.02rem; letter-spacing: .1em; }
+      .head-note { font-size: .59rem; }
+      .section { min-height: calc(100vh - 61px); }
+      .hero h1 { font-size: 3.1rem; }
+      .hero-table { min-height: 345px; }
+      .scrap { width: 90%; padding: 34px 24px 28px; }
+      .question-frame { padding: 42px 20px 30px; }
+      .question-title { font-size: 2rem; }
+      .option { grid-template-columns: 28px 1fr; padding: 16px 14px 15px; }
+      .quiz-nav { align-items: flex-start; }
+      .result-hero,
+      .cta-frame { padding: 48px 22px; }
+      .tcard { padding: 26px 21px; }
+      .result-title { font-size: 3.25rem; }
+      .btn { width: 100%; }
+      .result-actions .btn { width: auto; flex: 1 1 210px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *,
+      *::before,
+      *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+      }
+      .caret { display: none; }
+    }
+
+    @media print {
+      .site-head,
+      footer,
+      .result-actions,
+      .toast {
+        display: none !important;
+      }
+
+      body {
+        background: white;
+      }
+
+      body::before { display: none; }
+
+      .screen { display: none !important; }
+
+      #resultScreen.active {
+        display: block !important;
+      }
+
+      .section {
+        min-height: 0;
+        padding: 0;
+      }
+
+      .result-hero,
+      .tcard,
+      .cta-frame {
+        box-shadow: none;
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-head">
+    <div class="wrap head-inner">
+      <a href="#" class="brand" id="brandHome" aria-label="Return to assessment introduction">TheTypedTarot</a>
+      <div class="head-note">Where personality meets prophecy</div>
+    </div>
+  </header>
+
+  <main>
+    <section id="introScreen" class="screen active">
+      <div class="section">
+        <div class="wrap hero">
+          <div class="hero-copy">
+            <div class="eyebrow-row">
+              <span class="type-label">A self-trust assessment</span>
+            </div>
+
+            <h1>Discover Your<br>Self-Trust Language</h1>
+
+            <p class="hero-sub">
+              Find the doorway that helps you hear your inner knowing and move forward with greater confidence.
+            </p>
+
+            <p class="hero-body">
+              You already have a way of knowing. These six questions reveal the pathway through which your self-trust becomes easiest to access—especially when doubt, outside opinions, or overthinking get loud.
+            </p>
+
+            <div class="meta-row" aria-label="Assessment details">
+              <span class="chip">6 questions</span>
+              <span class="chip">About 3 minutes</span>
+              <span class="chip">Personal result</span>
+            </div>
+
+            <button id="startBtn" class="btn btn-amber">Begin the assessment</button>
+
+            <div class="rule" aria-hidden="true">✦</div>
+          </div>
+
+          <div class="hero-table">
+            <svg class="watermark enneagram" viewBox="0 0 220 220" fill="none" stroke="currentColor" aria-hidden="true">
+              <circle cx="110" cy="110" r="80"/>
+              <circle cx="110" cy="110" r="87" stroke-dasharray="2 6"/>
+              <path d="M110 30 179 150 41 150Z"/>
+              <path d="M162 49 41 150 93 31 179 150 58 49 110 190 162 49Z"/>
+              <circle cx="110" cy="30" r="3" fill="currentColor" stroke="none"/>
+              <circle cx="162" cy="49" r="3" fill="currentColor" stroke="none"/>
+              <circle cx="190" cy="96" r="3" fill="currentColor" stroke="none"/>
+              <circle cx="179" cy="150" r="3" fill="currentColor" stroke="none"/>
+              <circle cx="138" cy="185" r="3" fill="currentColor" stroke="none"/>
+              <circle cx="82" cy="185" r="3" fill="currentColor" stroke="none"/>
+              <circle cx="41" cy="150" r="3" fill="currentColor" stroke="none"/>
+              <circle cx="30" cy="96" r="3" fill="currentColor" stroke="none"/>
+              <circle cx="58" cy="49" r="3" fill="currentColor" stroke="none"/>
+            </svg>
+
+            <svg class="watermark moon" viewBox="0 0 160 160" fill="none" stroke="currentColor" aria-hidden="true">
+              <path d="M104 19c-35 8-53 49-34 79 13 21 39 31 63 22-11 14-28 23-48 23-34 0-62-28-62-62 0-31 23-57 53-61 10-2 19-1 28-1Z"/>
+              <path d="m121 29 4 10 10 4-10 4-4 10-4-10-10-4 10-4 4-10Z"/>
+            </svg>
+
+            <article class="scrap" aria-label="A note about self-trust">
+              <p class="scrap-label">Typed note / keep this</p>
+              <p class="typed-note"><span id="typedText"></span><span id="caret" class="caret" aria-hidden="true"></span></p>
+
+              <svg class="key-drawing" viewBox="0 0 140 120" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="48" cy="42" r="24"/>
+                <circle cx="48" cy="42" r="9"/>
+                <path d="M65 59 110 104M91 85l10-10M101 95l10-10"/>
+                <path d="M16 87c20 11 44 11 64 0" stroke-dasharray="3 5"/>
+              </svg>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="quizScreen" class="screen" aria-live="polite">
+      <div class="section quiz-section">
+        <div class="wrap quiz-shell">
+          <div class="progress-meta">
+            <span>Self-trust field notes</span>
+            <span id="progressText">Question 1 of 6</span>
+          </div>
+          <div class="progress-track" aria-hidden="true">
+            <div id="progressFill" class="progress-fill"></div>
+          </div>
+
+          <article class="question-frame">
+            <div id="questionHost"></div>
+          </article>
+
+          <nav class="quiz-nav" aria-label="Quiz navigation">
+            <button id="backBtn" class="link-btn" disabled>Previous question</button>
+            <button id="saveExitBtn" class="link-btn">Save and return later</button>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <section id="resultScreen" class="screen">
+      <div class="section result-section">
+        <div class="wrap result-shell" id="resultHost"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>THETYPEDTAROT &nbsp; ✦ &nbsp; THE PATTERN BENEATH METHOD</footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    /* ============================================================
+       SITE CONFIGURATION
+       Add Lisa's live booking or sales-page URL before publishing.
+       Example: bookingUrl: "https://example.com/book"
+       ============================================================ */
+    const SITE_CONFIG = Object.freeze({
+      bookingUrl: "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3CiWWDREnvxmrl2Atsso8Rp82V1nG318lCA3dT7jMHQUDAnYJ7tBhq4TVIkIwd0Cp4PjeZKANd"
+    });
+
+    const TYPES = {
+      sanctuary: {
+        name: "The Sanctuary",
+        language: "Quiet Clarity",
+        intro: "Your inner knowing becomes easiest to hear when the noise around you softens. You tend to find your clearest truth through uninterrupted space, reflection, and enough quiet to notice what you genuinely think and want.",
+        communicates: "Your knowing often arrives as a simple, steady thought after the mental static settles. It may not feel dramatic. It feels clean, private, and increasingly difficult to argue with.",
+        signs: [
+          "Your thoughts become simpler rather than more elaborate.",
+          "One answer keeps returning after the noise settles.",
+          "You feel less pressure to justify your choice.",
+          "Time alone creates relief instead of more confusion."
+        ],
+        harder: "Urgency, constant input, too many opinions, and trying to reach an answer before you have had time to be alone with yourself.",
+        practice: "Set a timer for five minutes. Write the question at the top of a page, then complete this sentence without editing: “If no one else could approve or disapprove of my decision, I would…”",
+        advice: "I need a little quiet space to hear my own answer before I take in anyone else’s.",
+        icon: "sanctuary"
+      },
+      compass: {
+        name: "The Compass",
+        language: "Embodied Knowing",
+        intro: "Your inner knowing often speaks through your body before your mind can explain it. Expansion, contraction, relief, heaviness, calm, or tension can become an honest directional signal.",
+        communicates: "Your body gives you information in real time. One possibility may soften your breath while another tightens your jaw. The signal becomes clearest when you observe it without immediately forcing it to mean something.",
+        signs: [
+          "Your breathing deepens around one possibility.",
+          "Your shoulders soften or your chest opens.",
+          "A choice creates a grounded sense of relief.",
+          "Your body responds consistently when you revisit the question."
+        ],
+        harder: "Stress, exhaustion, emotional overwhelm, or confusing an adrenaline response with intuitive clarity.",
+        practice: "Say each option aloud slowly. Pause after each one and notice your breath, jaw, chest, stomach, and shoulders. Record what changed before you interpret it.",
+        advice: "Give me a moment to notice what my body is already communicating.",
+        icon: "compass"
+      },
+      archive: {
+        name: "The Archive",
+        language: "Personal Evidence",
+        intro: "Your self-trust strengthens when you remember the moments your instincts were already accurate. Experience becomes evidence, and evidence helps you recognize the wisdom you have been carrying all along.",
+        communicates: "Your knowing often arrives through pattern recognition. Something in the present echoes a previous choice, feeling, or outcome—and your history quietly shows you what you already understand.",
+        signs: [
+          "A current situation reminds you of something you have experienced before.",
+          "You notice repeating patterns in what has felt right or wrong.",
+          "Past decisions offer practical evidence about what works for you.",
+          "You can name moments when your first instinct proved meaningful."
+        ],
+        harder: "Dismissing previous insight as luck, focusing only on mistakes, or believing you need completely new information before you can act.",
+        practice: "Create a brief evidence ledger: What did I sense? What did I do? What happened? What does this teach me about the way I know?",
+        advice: "Before I ask what anyone else thinks, I want to remember what my own experience has already shown me.",
+        icon: "archive"
+      },
+      northstar: {
+        name: "The North Star",
+        language: "Values Alignment",
+        intro: "You trust yourself most when a decision reflects what matters deeply to you. Your clearest direction appears when you stop asking which option is safest and begin asking which one is most honest.",
+        communicates: "Your knowing speaks through integrity. A choice may still feel difficult, but it becomes steadier when it reflects the person you want to be and the life you want to create.",
+        signs: [
+          "A choice feels honest even when it is uncomfortable.",
+          "You can name why the decision matters.",
+          "Your answer steadies when you stop predicting everyone’s reaction.",
+          "You feel aligned rather than merely relieved."
+        ],
+        harder: "Prioritizing approval, avoiding short-term discomfort, or becoming overly focused on controlling the outcome.",
+        practice: "Choose three values that matter most in this situation. Then ask: “Which option allows me to live those values most fully?”",
+        advice: "I want to choose from what matters most to me, not from what creates the least discomfort.",
+        icon: "northstar"
+      },
+      mirror: {
+        name: "The Mirror",
+        language: "Supported Reflection",
+        intro: "You often hear yourself most clearly in the presence of someone who listens closely, reflects honestly, and asks thoughtful questions without taking the decision away from you.",
+        communicates: "Your knowing becomes audible through conversation. The right question helps you recognize your own language, and hearing your answer aloud allows its truth to land.",
+        signs: [
+          "You hear yourself say something that feels immediately true.",
+          "A thoughtful question creates clarity rather than dependence.",
+          "You feel more connected to yourself after the conversation.",
+          "Another person’s presence helps you organize what you already know."
+        ],
+        harder: "Unsolicited advice, leading questions, strong opinions, or asking someone else to choose on your behalf.",
+        practice: "Ask a trusted person for ten minutes of reflection without advice. Invite them to ask only: “What do you already know about this?”",
+        advice: "Please help me hear myself more clearly rather than helping me decide.",
+        icon: "mirror"
+      }
+    };
+
+    const QUESTIONS = [
+      {
+        text: "When a decision has become tangled in your mind, what most often creates the first real sense of clarity?",
+        options: [
+          ["sanctuary", "Getting completely alone long enough to hear what I genuinely think."],
+          ["mirror", "Talking it through with someone who asks good questions without telling me what to do."],
+          ["compass", "Noticing which option changes my breathing, posture, or physical tension."],
+          ["archive", "Remembering what happened the last time I felt this exact kind of hesitation."],
+          ["northstar", "Naming which choice reflects what matters most to me."]
+        ]
+      },
+      {
+        text: "What makes an answer feel trustworthy to you?",
+        options: [
+          ["archive", "It connects with patterns I have observed in my own life."],
+          ["northstar", "It reflects the values I want my life to embody."],
+          ["sanctuary", "It remains steady after the noise and pressure have faded."],
+          ["compass", "My physical response becomes grounded and consistent."],
+          ["mirror", "I can hear it clearly when I speak it in a safe, non-directive space."]
+        ]
+      },
+      {
+        text: "What kind of support helps you trust yourself without feeling directed?",
+        options: [
+          ["mirror", "A person who reflects my words back and lets me reach my own conclusion."],
+          ["sanctuary", "Protected time with no input, commentary, or urgency."],
+          ["northstar", "A prompt that brings me back to my values and priorities."],
+          ["archive", "A way to review past experiences and identify what they have taught me."],
+          ["compass", "A grounding practice that helps me notice my physical response."]
+        ]
+      },
+      {
+        text: "When you have ignored your inner knowing, what do you usually recognize afterward?",
+        options: [
+          ["compass", "My body was signaling discomfort before I admitted it."],
+          ["archive", "I had already lived through a version of this pattern."],
+          ["mirror", "I said what I knew out loud, then talked myself away from it."],
+          ["northstar", "I chose approval or convenience over what mattered to me."],
+          ["sanctuary", "I never gave myself enough quiet to hear my own opinion."]
+        ]
+      },
+      {
+        text: "Which practice would you be most likely to use in the middle of a real decision?",
+        options: [
+          ["compass", "Pause, breathe, and scan my body as I consider each option."],
+          ["northstar", "Write down my three most important values for this situation."],
+          ["archive", "List the times my instincts have already been accurate."],
+          ["mirror", "Ask someone to reflect my words without offering an opinion."],
+          ["sanctuary", "Take a quiet walk or sit alone without consuming more information."]
+        ]
+      },
+      {
+        text: "Which description feels most like the way your truth wants to reach you?",
+        options: [
+          ["northstar", "As a clear sense of what is most honest and aligned."],
+          ["mirror", "As words I discover while speaking in a safe reflective space."],
+          ["sanctuary", "As a quiet answer that becomes audible when everything else settles."],
+          ["compass", "As a physical shift I can feel before I can explain it."],
+          ["archive", "As a familiar pattern supported by what I have already lived."]
+        ]
+      }
+    ];
+
+    const introScreen = document.getElementById("introScreen");
+    const quizScreen = document.getElementById("quizScreen");
+    const resultScreen = document.getElementById("resultScreen");
+    const startBtn = document.getElementById("startBtn");
+    const questionHost = document.getElementById("questionHost");
+    const progressText = document.getElementById("progressText");
+    const progressFill = document.getElementById("progressFill");
+    const backBtn = document.getElementById("backBtn");
+    const saveExitBtn = document.getElementById("saveExitBtn");
+    const resultHost = document.getElementById("resultHost");
+    const toast = document.getElementById("toast");
+
+    let currentQuestion = 0;
+    let answers = [];
+
+    function showScreen(screen) {
+      [introScreen, quizScreen, resultScreen].forEach(item => item.classList.remove("active"));
+      screen.classList.add("active");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function updateStartButton() {
+      const saved = loadProgress();
+      startBtn.textContent = saved && saved.answers.length ? "Resume the assessment" : "Begin the assessment";
+    }
+
+    function startAssessment() {
+      const saved = loadProgress();
+      if (saved) {
+        answers = saved.answers;
+        currentQuestion = Math.min(saved.currentQuestion, QUESTIONS.length - 1);
+      } else {
+        answers = [];
+        currentQuestion = 0;
+      }
+
+      showScreen(quizScreen);
+      renderQuestion();
+    }
+
+    function renderQuestion() {
+      const question = QUESTIONS[currentQuestion];
+      const keys = ["A", "B", "C", "D", "E"];
+
+      questionHost.innerHTML = `
+        <h2 class="question-title">${question.text}</h2>
+        <div class="options">
+          ${question.options.map((option, index) => `
+            <button
+              class="option ${answers[currentQuestion] === option[0] ? "selected" : ""}"
+              data-type="${option[0]}"
+              aria-label="Answer ${keys[index]}: ${option[1]}"
+            >
+              <span class="option-key">${keys[index]}.</span>
+              <span class="option-text">${option[1]}</span>
+            </button>
+          `).join("")}
+        </div>
+      `;
+
+      questionHost.querySelectorAll(".option").forEach(option => {
+        option.addEventListener("click", () => chooseAnswer(option.dataset.type));
+      });
+
+      progressText.textContent = `Question ${currentQuestion + 1} of ${QUESTIONS.length}`;
+      progressFill.style.width = `${((currentQuestion + 1) / QUESTIONS.length) * 100}%`;
+      backBtn.disabled = currentQuestion === 0;
+    }
+
+    function chooseAnswer(type) {
+      answers[currentQuestion] = type;
+
+      if (currentQuestion === QUESTIONS.length - 1) {
+        localStorage.removeItem("typedTarotSelfTrustProgress");
+        calculateResults();
+        return;
+      }
+
+      currentQuestion += 1;
+      saveProgress();
+      renderQuestion();
+    }
+
+    function previousQuestion() {
+      if (currentQuestion === 0) return;
+      currentQuestion -= 1;
+      saveProgress();
+      renderQuestion();
+    }
+
+    function saveProgress() {
+      localStorage.setItem("typedTarotSelfTrustProgress", JSON.stringify({
+        currentQuestion,
+        answers
+      }));
+    }
+
+    function loadProgress() {
+      try {
+        const value = localStorage.getItem("typedTarotSelfTrustProgress");
+        if (!value) return null;
+        const parsed = JSON.parse(value);
+        if (!Array.isArray(parsed.answers)) return null;
+
+        return {
+          currentQuestion: Number.isInteger(parsed.currentQuestion) ? parsed.currentQuestion : 0,
+          answers: parsed.answers
+        };
+      } catch (error) {
+        return null;
+      }
+    }
+
+    function saveAndExit() {
+      saveProgress();
+      showToast("Your place is saved on this device.");
+      setTimeout(() => {
+        updateStartButton();
+        showScreen(introScreen);
+      }, 500);
+    }
+
+    function calculateResults() {
+      const scores = Object.fromEntries(Object.keys(TYPES).map(key => [key, 0]));
+
+      answers.forEach((type, index) => {
+        if (!type) return;
+        // The final reflection carries extra weight and also acts as a natural tie-breaker.
+        scores[type] += index === QUESTIONS.length - 1 ? 2 : 1;
+      });
+
+      const lastSeen = type => answers.lastIndexOf(type);
+
+      const ranked = Object.entries(scores).sort((a, b) => {
+        if (b[1] !== a[1]) return b[1] - a[1];
+        if (lastSeen(b[0]) !== lastSeen(a[0])) return lastSeen(b[0]) - lastSeen(a[0]);
+        return Object.keys(TYPES).indexOf(a[0]) - Object.keys(TYPES).indexOf(b[0]);
+      });
+
+      const primaryKey = ranked[0][0];
+      const supportingKey = ranked[1][0];
+
+      localStorage.setItem("typedTarotSelfTrustResult", JSON.stringify({
+        primaryKey,
+        supportingKey
+      }));
+
+      renderResult(primaryKey, supportingKey);
+      showScreen(resultScreen);
+    }
+
+    function iconSvg(icon) {
+      const icons = {
+        sanctuary: `
+          <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 82V45c0-20 12-34 28-34s28 14 28 34v37"/>
+            <path d="M34 82V48c0-11 7-20 16-20s16 9 16 20v34"/>
+            <path d="M18 82h64M50 38v25M43 50h14"/>
+          </svg>`,
+        compass: `
+          <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="50" cy="50" r="35"/><circle cx="50" cy="50" r="4"/>
+            <path d="M61 28 54 54 28 61l18-15 15-18Z"/>
+            <path d="M50 9v8M50 83v8M9 50h8M83 50h8"/>
+          </svg>`,
+        archive: `
+          <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 20h46a10 10 0 0 1 10 10v52H32a10 10 0 0 1-10-10V20Z"/>
+            <path d="M32 82V30a10 10 0 0 0-10-10"/>
+            <path d="M40 38h24M40 50h24M40 62h16"/>
+            <path d="M64 14v18l-7-5-7 5V14"/>
+          </svg>`,
+        northstar: `
+          <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="m50 9 8 31 33 10-33 10-8 31-8-31L9 50l33-10 8-31Z"/>
+            <circle cx="50" cy="50" r="6"/>
+            <path d="m72 18 3 8 8 3-8 3-3 8-3-8-8-3 8-3 3-8Z"/>
+          </svg>`,
+        mirror: `
+          <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <ellipse cx="50" cy="42" rx="27" ry="32"/>
+            <ellipse cx="50" cy="42" rx="19" ry="24"/>
+            <path d="M50 74v12M38 88h24M33 35c6-8 12-12 20-13"/>
+          </svg>`
+      };
+
+      return icons[icon] || icons.northstar;
+    }
+
+    function renderResult(primaryKey, supportingKey) {
+      const primary = TYPES[primaryKey];
+      const supporting = TYPES[supportingKey];
+
+      resultHost.innerHTML = `
+        <article class="result-hero">
+          <div class="result-icon">${iconSvg(primary.icon)}</div>
+          <div class="result-eyebrow">Your clearest doorway into self-trust is</div>
+          <h1 class="result-title">${primary.name}</h1>
+          <p class="result-language">${primary.language}</p>
+          <p class="result-intro">${primary.intro}</p>
+          <div class="support-line">
+            <span class="support-label">◇ Supporting language</span>
+            <span class="support-value">${supporting.name}<span class="support-divider" aria-hidden="true">•</span>${supporting.language}</span>
+          </div>
+        </article>
+
+        <div class="result-grid">
+          <article class="tcard">
+            <p class="card-label">★ How it communicates</p>
+            <h3>Your natural signal</h3>
+            <p>${primary.communicates}</p>
+          </article>
+
+          <article class="tcard lit">
+            <p class="card-label">★ Signs of connection</p>
+            <h3>When you are hearing it</h3>
+            <ul class="checks">
+              ${primary.signs.map(sign => `<li>${sign}</li>`).join("")}
+            </ul>
+          </article>
+
+          <article class="tcard support">
+            <p class="card-label">◇ What obscures it</p>
+            <h3>When the signal gets quieter</h3>
+            <p>${primary.harder}</p>
+          </article>
+
+          <article class="tcard">
+            <p class="card-label">★ Return practice</p>
+            <h3>A way back to yourself</h3>
+            <p>${primary.practice}</p>
+          </article>
+
+          <article class="tcard full lit">
+            <p class="card-label">★ Before seeking outside advice</p>
+            <h3 class="advice-heading">“${primary.advice}”</h3>
+          </article>
+        </div>
+
+        <section class="cta-frame">
+          <div class="cta-price">Discover: The Map + The Mirror &nbsp; ✦ &nbsp; $45</div>
+          <h2>Your self-trust language is the doorway. Now discover what keeps pulling you away from it.</h2>
+          <p>
+            Your result shows you how your inner knowing communicates most clearly. In <strong>Discover: The Map + The Mirror</strong>, Lisa uses <strong>The Pattern Beneath Method</strong> to help you identify your Enneagram type with greater accuracy, recognize the deeper pattern shaping your decisions, and understand what your own knowing has been trying to tell you.
+          </p>
+          <a id="bookingBtn" class="btn btn-amber" href="${SITE_CONFIG.bookingUrl || "#"}" target="_blank" rel="noopener">
+            Discover the pattern beneath
+          </a>
+          <p class="fine-print">
+            The session goes deeper than the assessment by helping you see the pattern beneath the pattern—without turning your result into another identity you have to research.
+          </p>
+        </section>
+
+        <div class="result-actions">
+          <button id="copyBtn" class="btn btn-ghost">Copy my result</button>
+          <button id="printBtn" class="btn btn-ghost">Print or save as PDF</button>
+          <button id="retakeBtn" class="btn btn-ghost">Retake the assessment</button>
+        </div>
+      `;
+
+      document.getElementById("copyBtn").addEventListener("click", () => copyResult(primary, supporting));
+      document.getElementById("printBtn").addEventListener("click", () => window.print());
+      document.getElementById("retakeBtn").addEventListener("click", resetAssessment);
+
+      document.getElementById("bookingBtn").addEventListener("click", event => {
+        if (!SITE_CONFIG.bookingUrl) {
+          event.preventDefault();
+          showToast("Add Lisa’s live session link in SITE_CONFIG before publishing.");
+        }
+      });
+    }
+
+    async function copyResult(primary, supporting) {
+      const text = `My Self-Trust Language: ${primary.name} — ${primary.language}
+
+How it communicates:
+${primary.communicates}
+
+A practice for returning to myself:
+${primary.practice}
+
+Before seeking outside advice:
+“${primary.advice}”
+
+Supporting language: ${supporting.name} — ${supporting.language}
+
+Discover Your Self-Trust Language by TheTypedTarot`;
+
+      try {
+        await navigator.clipboard.writeText(text);
+        showToast("Your result has been copied.");
+      } catch (error) {
+        showToast("Copying was blocked by this browser.");
+      }
+    }
+
+    function resetAssessment() {
+      localStorage.removeItem("typedTarotSelfTrustProgress");
+      localStorage.removeItem("typedTarotSelfTrustResult");
+      currentQuestion = 0;
+      answers = [];
+      updateStartButton();
+      showScreen(introScreen);
+    }
+
+    function showToast(message) {
+      toast.textContent = message;
+      toast.classList.add("show");
+      setTimeout(() => toast.classList.remove("show"), 2300);
+    }
+
+    function runTypewriter() {
+      const target = document.getElementById("typedText");
+      const caret = document.getElementById("caret");
+      const sentence = "You already have a trustworthy inner voice. This helps you recognize how it speaks.";
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      if (reduceMotion) {
+        target.textContent = sentence;
+        caret.style.display = "none";
+        return;
+      }
+
+      let index = 0;
+
+      function typeNext() {
+        if (index >= sentence.length) {
+          setTimeout(() => {
+            caret.style.animationIterationCount = "6";
+          }, 300);
+          return;
+        }
+
+        const character = sentence[index];
+        target.textContent += character;
+        index += 1;
+
+        const delay = character === "." ? 260 : 55;
+        setTimeout(typeNext, delay);
+      }
+
+      typeNext();
+    }
+
+    startBtn.addEventListener("click", startAssessment);
+    backBtn.addEventListener("click", previousQuestion);
+    saveExitBtn.addEventListener("click", saveAndExit);
+
+    document.getElementById("brandHome").addEventListener("click", event => {
+      event.preventDefault();
+      updateStartButton();
+      showScreen(introScreen);
+    });
+
+    updateStartButton();
+    runTypewriter();
+  </script>
+</body>
+</html>
